@@ -24,11 +24,11 @@ ProcessPhrases(L("sent")) {
     }
 }
 
-LineAttrs(L("line"),L("node in")) {
+LineAttrs(L("line")) {
     L("len") = strlength(pnvar(L("line"),"$text"));
     pnmakevar(L("line"),"length",L("len"));
 
-    L("node") = pndown(L("node in"));
+    L("node") = pndown(L("line"));
     L("first") = 1;
     while (L("node")) {
         L("name") = pnname(L("node"));

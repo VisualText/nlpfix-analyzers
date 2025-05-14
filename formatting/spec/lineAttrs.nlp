@@ -9,7 +9,7 @@
 @NODES _ROOT
 
 @POST
-LineAttrs(N(1),N(1));
+LineAttrs(N(1));
 
 @RULES
 _xNIL <-
