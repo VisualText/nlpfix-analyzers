@@ -25,4 +25,6 @@ while (L("con")) {
     L("con") = next(L("con"));
 }
 
+DisplayKB(G("caps"),2);
+
 @@CODE
