@@ -1,17 +1,17 @@
 dicttokz	nil	# Gen:   Convert input to token list
-nlp	init	# comment
-nlp	KBFuncs	# comment
-nlp	funcs	# comment
-nlp	LinesDictTokZ	# comment
-nlp	numbers	# comment
-nlp	ordinals	# comment
-nlp	times	# comment
-nlp	zulu	# comment
-nlp	timePhrases	# comment
-nlp	dates	# comment
-nlp	datesDay	# comment
-nlp	dateTime	# comment
-nlp	datePhrases	# comment
-nlp	splice	# comment
-nlp	kb	# comment
-nlp	output	# comment
+nlp	init	# Create the datetimes concept in the knowledge base
+nlp	KBFuncs	# Declare the knowledge base display and dump functions
+nlp	funcs	# Declare the functions that add dates, times, and ranges to the knowledge base
+nlp	LinesDictTokZ	# Gather the text into lines, for input tokenized with dicttokz
+nlp	numbers	# Mark each number with what it could be: a month, a day, or a year
+nlp	ordinals	# Recognize the ordinals, as in 1st and 2nd, and the am and pm markers
+nlp	times	# Recognize the clock times, as in 10:04:23 pm
+nlp	zulu	# Recognize the Zulu, or UTC, time markers
+nlp	timePhrases	# Attach the time zone, the offset, and the fractional seconds to a time
+nlp	dates	# Recognize the date formats, as in Fri, 12 Dec 2014
+nlp	datesDay	# Attach a leading weekday to the date that follows it
+nlp	dateTime	# Join a date and a time into a single date-time
+nlp	datePhrases	# Recognize the date and date-time ranges
+nlp	splice	# Splice out the line nodes, leaving the dates and times at the root
+nlp	kb	# Store the dates, times, and ranges in the knowledge base
+nlp	output	# Save the datetimes knowledge base to a kbb file and to output.json

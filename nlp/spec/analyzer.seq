@@ -1,17 +1,17 @@
 dicttokz	nil	# Gen:   Convert input to token list
-nlp	init	# comment
-nlp	TreeFuncs	# comment
-nlp	KBFuncs	# comment
-nlp	funcs	# comment
-nlp	sentenceEnders	# comment
-nlp	sentences	# comment
-nlp	caps	# comment
-nlp	categorizeCaps	# comment
-nlp	findReferences	# comment
-nlp	labelCaps	# comment
-nlp	reduceCaps	# comment
-nlp	conjunctions	# comment
-nlp	conjoin	# comment
-nlp	attributes	# comment
-nlp	personAttributes	# comment
-nlp	output	# comment
+nlp	init	# Create the article, caps, and people concepts in the knowledge base
+nlp	TreeFuncs	# Declare the functions that copy parse tree attributes to nodes and concepts
+nlp	KBFuncs	# Declare the knowledge base display and dump functions
+nlp	funcs	# Declare the functions that attach attributes to a person
+nlp	sentenceEnders	# Mark the punctuation that ends a sentence
+nlp	sentences	# Cut the text into sentences and record each one in the knowledge base
+nlp	caps	# Gather the capitalized phrases and add each one to the caps knowledge base
+nlp	categorizeCaps	# Count what each capitalized phrase looks like: a person, a school, a cause
+nlp	findReferences	# Link a short capitalized name to the longer name that contains it
+nlp	labelCaps	# Label each capitalized phrase as a person, an organization, or a cause
+nlp	reduceCaps	# Splice out the cap nodes, leaving the labeled node underneath
+nlp	conjunctions	# Mark the conjunctions that can join names together
+nlp	conjoin	# Join the conjoined names into a single person node
+nlp	attributes	# Recognize the attributes stated about a person, such as a degree
+nlp	personAttributes	# Attach the attributes to the people they are stated about
+nlp	output	# Save the people, article, and caps knowledge bases to output.kbb
