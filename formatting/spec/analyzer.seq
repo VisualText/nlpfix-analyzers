@@ -1,26 +1,26 @@
 dicttokz	nil	# Gen:   Convert input to token list
-nlp	init	# comment
-nlp	KBFuncs	# comment
-nlp	funcs	# comment
-nlp	LinesDictTokZ	# comment
-nlp	numbered	# comment
-nlp	pageNumber	# comment
-nlp	pageTitle	# comment
-nlp	pageHeader	# comment
-nlp	lineAttrs	# comment
-nlp	headers	# comment
-nlp	colonHeaders	# comment
-nlp	prose	# comment
-nlp	stragglers	# comment
-nlp	paragraphBreaks	# comment
-nlp	enumerateBlock	# comment
-nlp	colonBlock	# comment
-nlp	proseBlock	# comment
-nlp	spliceLines	# comment
-nlp	sentenceEnders	# comment
-nlp	sentences	# comment
-nlp	sentEnum	# comment
-nlp	sentColon	# comment
-nlp	enumerate	# comment
-nlp	colon	# comment
-nlp	output	# comment
+nlp	init	# Create the sentences and document concepts in the knowledge base
+nlp	KBFuncs	# Declare the knowledge base display and dump functions
+nlp	funcs	# Declare the line-measuring and phrase-collecting helper functions
+nlp	LinesDictTokZ	# Gather the text into lines, for input tokenized with dicttokz
+nlp	numbered	# Find the enumeration number that starts a line, as in 1.
+nlp	pageNumber	# Mark a line that holds nothing but a page number
+nlp	pageTitle	# Split a running title line into its title and its description
+nlp	pageHeader	# Join the page number and the running title into one page header
+nlp	lineAttrs	# Measure each line: its length, its word counts, and its capitalization
+nlp	headers	# Mark an all-uppercase line as a header
+nlp	colonHeaders	# Mark a line that starts with a capitalized label and a colon
+nlp	prose	# Mark the lines that read as prose rather than as headers or labels
+nlp	stragglers	# Mark as prose the leftover lines that no earlier pass claimed
+nlp	paragraphBreaks	# Mark where a paragraph breaks, going by line length and capitalization
+nlp	enumerateBlock	# Gather each numbered item and its continuation lines into a block
+nlp	colonBlock	# Gather each colon label and its continuation lines into a block
+nlp	proseBlock	# Gather the runs of prose lines into paragraphs
+nlp	spliceLines	# Splice out the line nodes inside the blocks
+nlp	sentenceEnders	# Mark the punctuation that ends a sentence
+nlp	sentences	# Cut each block into sentences and record them in the knowledge base
+nlp	sentEnum	# Split the enumeration number off the front of an enumerated sentence
+nlp	sentColon	# Split the colon label off the front of a labeled sentence
+nlp	enumerate	# Gather the sentences belonging to one numbered item
+nlp	colon	# Gather the sentences belonging to one colon label
+nlp	output	# Build the document knowledge base of paragraphs, enumerations, and labels
